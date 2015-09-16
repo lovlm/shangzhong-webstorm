@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>上高二中校友网</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="../../images/xiaohui.jpg">
+	<link href="../../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../css/mine.css" rel="stylesheet">
+
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6 col-md-push-3">
+				<br><br><br>
+				<form novalidate="true" style="left: 10%">
+					已有账户？直接<a href="login.html">登录</a>
+					<div class="row">
+						<div class="col-md-1">
+							<label for="name" class=""><pre>姓名</pre></label>
+						</div>
+						<div class="col-md-6 ">
+							<div class="form-group">
+								<input type="text" class="form-control" id="name"
+                                       placeholder="" onblur="chkName()" onfocus="nameRecovery()">
+							</div>
+						</div>
+						<div class="col-md-4" id="nameRemind">
+							<p>请填写您的真实姓名</p>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-1">
+							<label for="password"><pre>密码</pre></label>
+						</div>
+						<div class="col-md-6 ">
+							<div class="form-group">
+								<input type="password" class="form-control"
+								       id="password" placeholder="" onblur="chkPassword()"
+										onfocus="pwdRecovery()">
+							</div>
+						</div>
+						<div class="col-md-4" >
+							<div id="pwdRemind" >
+								<p>密码在6-16位之间，大小写字母、数字以及“_、#、@、!”组成</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-1">
+							<label for="pwdrepeat" visibility="true"><pre>重复</pre></label>
+						</div>
+						<div class="col-md-6 ">
+							<div class="form-group">
+								<input type="password" class="form-control" id="pwdrepeat"
+								       placeholder="" onblur="chkPwdRepeat()"
+										onfocus="pwdRepeatRecovery()">
+							</div>
+						</div>
+						<div class="col-md-4" >
+							<div id="feedbackPwdRepeat" >
+								<p>请重复密码</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-1">
+							<label for="Email"><pre>邮箱</pre></label>
+						</div>
+						<div class="col-md-6 ">
+							<div class="form-group">
+								<input type="email" class="form-control" id="Email"
+								       placeholder="" onblur="chkEmail()"
+										onfocus="emailRecovery()">
+							</div>
+						</div>
+						<div class="col-md-4" >
+							<div id="emailRemind">
+								<p>您的常用邮箱，便于密码找回以及消息通知</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-1">
+							<label for="province"><pre>地区</pre></label>
+						</div>
+						<div class="col-md-2 ">
+							<div class="form-group">
+								<input type="text" class="form-control" id="province" placeholder="省份">
+							</div>
+						</div>
+						<div class="col-md-2 ">
+							<div class="form-group">
+								<input type="text" class="form-control" id="town" placeholder="市">
+							</div>
+						</div>
+						<div class="col-md-2 ">
+							<div class="form-group">
+								<input type="text" class="form-control" id="county" placeholder="县">
+							</div>
+						</div>
+						<div class="col-md-4">
+							<p>您目前工作或学习的城市</p>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-1">
+							<label for="year"><pre>届次</pre></label>
+						</div>
+						<div class="col-md-6 ">
+							<div class="form-group">
+								<select class="form-control" id="year" placeholder="">
+									<option>1993</option>
+									<option>1994</option>
+									<option>1995</option>
+									<option>1996</option>
+									<option>1997</option>
+									<option>1998</option>
+									<option>1999</option>
+									<option>2000</option>
+									<option>2001</option>
+									<option>2002</option>
+									<option>2003</option>
+									<option>2004</option>
+									<option>2005</option>
+									<option>2006</option>
+									<option>2007</option>
+									<option>2008</option>
+									<option>2009</option>
+									<option>2010</option>
+									<option>2011</option>
+									<option>2012</option>
+									<option>2013</option>
+									<option>2014</option>
+									<option>2015</option>
+								</select>
+						</div>
+						</div>
+						<div class="col-md-4">
+							<p>您从母校毕业的年份</p>
+						</div>
+						<div class="col-md-5" >
+							<div id="feedbackYear" style="color: red"></div>
+						</div>
+					</div>
+					<input type="submit" class="btn btn-lg btn-default" value="提交" id="submit">
+					<input type="reset" class="btn btn-lg btn-default" value="重置" id="reset" >
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="../../js/jquery.min.js"></script>
+	<script src="../../js/bootstrap.min.js"></script>
+	<script src="../../js/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html >
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>上高二中校友网</title>
+	<link rel="icon" href="../../images/xiaohui.jpg">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../css/mine.css" rel="stylesheet">
+</head>
+<body>
+	<!-- Carousel ================================================== -->
+	<div class="container">
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<img class="first-slide" src="" alt="First slide">
+			</div>
+			<div class="item">
+				<img class="second-slide" src="" alt="Second slide">
+			</div>
+			<div class="item">
+				<img class="third-slide" src="" alt="Third slide">
+			</div>
+		</div>
+		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div><!-- /.carousel -->
+	</div>
+
+	<!-- ----------------------Static navbar--------------- -->
+	<div class="container">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="home.html">上高二中校友会</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<!--<li class="active"><a href="#">首页</a></li>-->
+						<!--<li><a href="#"></a></li>-->
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+							   aria-expanded="false">总会介绍<span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#">通告</a></li>
+								<li class="divider"></li>
+								<!--<li class="dropdown-header">Nav header</li>-->
+								<!--<li><a href="#">Separated link</a></li>-->
+								<li><a href="#">总会介绍</a></li>
+								<li><a href="#">校友会志愿者团</a></li>
+							</ul>
+						</li>
+						<li><a href="今日二中.html">今日二中</a></li>
+						<li><a href="校友动态.html">校友动态</a></li>
+						<li><a href="二中学人.html">二中学人</a></li>
+						<li><a href="../platform/论坛首页.html">论坛</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="register.html">注册</a></li>
+
+						<!--使用模态框登录 -->
+						<li data-toggle="modal" data-target="#myModal">
+							<a href="#">登录</a>
+						</li>
+						<!-- 模态框-->
+						<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h4 class="modal-title" id="myModalLabel">登录</h4>
+									</div>
+									<div class="modal-body">
+										<div class="container">
+											<div class="row">
+												<div class=" col-md-5">
+													<form class="form-signin">
+														<h2 class="form-signin-heading">请登录</h2>
+														<label for="inputEmail" class="sr-only">邮箱</label>
+														<input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+														<label for="inputPassword" class="sr-only">密码</label>
+														<input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+														<div class="checkbox">
+															<label>
+																<input type="checkbox" value="remember-me">记住账号信息
+															</label>
+														</div>
+														<button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+													</form>
+													<div class="col-md-8 col-md-push-2">
+														<div class="col-md-10 col-md-push-1">
+															还没有加入校友会？立即<a href="register.html">注册</a>
+														</div>
+
+													</div>
+												</div>
+											</div>
+
+										</div> <!-- /container -->
+									</div> <!-- /model-body -->
+									<!--<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										<button type="button" class="btn btn-primary">Save changes</button>
+									</div>-->
+								</div>
+							</div>
+						</div><!-- /模态框-->
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div><!--/.container-fluid -->
+		</nav>
+	</div><!--/.container -->
+
+	<!-- -------------------主体部分-------------------- -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<div ><span  class="toRight1">新闻动态</span></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-1">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<div ><span  class="toRight1">2015-4-21</span></div>
+					</div>
+					<div class="panel-body">
+						<div ><span  class="toRight1">2015-4-21</span></div>
+					</div>
+					<div class="panel-body">
+						<div ><span  class="toRight1">2015-4-21</span></div>
+					</div>
+					<div class="panel-body">
+						<div ><span  class="toRight1">2015-4-21</span></div>
+					</div>
+					<div class="panel-body">
+						<div ><span  class="toRight1">2015-4-21</span></div>
+					</div>
+				</div>
+			</div>
+
+		</div> <!-- /.row-->
+
+
+		<div class="alert alert-info" role="alert">
+			<strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+		</div>
+		<div class="alert alert-info" role="alert">
+			<strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+		</div>
+
+	</div>
+
+	<script src="../../js/jquery.min.js"></script>
+	<script src="../../js/bootstrap.min.js"></script>
+
+</body>
+</html>

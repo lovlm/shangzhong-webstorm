@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--<link rel="icon" href="images/school.jpg">-->
+    <link rel="icon" href="../../images/xiaohui.jpg">
+    <title>Dashboard Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../css/admin.css" rel="stylesheet">
+    <link href="../../css/mine.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="home.html">上高二中校友会</a>
+            </div>
+            <!--<div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="msg_mod_base.html">l1</a></li>
+                    &lt;!&ndash;<li><a href="msg_mod_base.html">l1</a></li>&ndash;&gt;
+                </ul>
+            </div>-->
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-offset-3 col-md-10 main">
+                <div class="table-responsive">
+                    <form id="form">
+                        已有账户？直接<a href="login.html">登录</a><br><br>
+                        <div class="input-group">
+                            <span class="input-group-addon">姓名<label style="color: red">*</label>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <input type="text" name="" class="form-control" required="required"
+                                   style="width: 40%" aria-describedby="basic-addon1"
+                                   id="name" onblur="chkName()" onfocus="nameRecovery()">&nbsp;
+                            <div class="form-control" style="width: 50%;border: none;border-collapse:collapse"
+                                 id="nameRemind">
+                                <p>请填写您的真实姓名</p>
+                            </div>
+                        </div><br>
+
+                        <div class="input-group">
+                            <span class="input-group-addon">密码 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <input type="password" name="" class="form-control" required="required"
+                                   style="width: 40%" aria-describedby="basic-addon1"
+                                   id="password" onblur="chkPassword()" onfocus="pwdRecovery()">&nbsp;
+                            <div class="form-control" style="width: 50%;border: none;border-collapse:collapse"
+                                 id="pwdRemind">
+                                <p>密码在6-16位之间，大小写字母、数字以及“_、#、@、!”组成</p>
+                            </div>
+                        </div><br>
+
+
+                        <div class="input-group">
+                            <span class="input-group-addon">重复密码</span>
+                            <input type="password" name="" class="form-control"
+                                   style="width: 40%" aria-describedby="basic-addon1"
+                                   id="pwdrepeat" onblur="chkPwdRepeat()" onfocus="pwdRepeatRecovery()">&nbsp;
+                            <div class="form-control" style="width: 50%;border: none;border-collapse:collapse"
+                                 id="feedbackPwdRepeat">
+                                <p>请重复密码</p>
+                            </div>
+                        </div><br>
+
+                        <div class="input-group">
+                            <span class="input-group-addon">邮箱 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <input type="text" name="" class="form-control" required="required"
+                                   style="width: 40%" aria-describedby="basic-addon1"
+                                   id="Email" onblur="chkEmail()" onfocus="emailRecovery()">&nbsp;
+                            <div class="form-control" style="width: 50%;border: none;border-collapse:collapse"
+                                 id="emailRemind">
+                                <p>您的常用邮箱，便于密码找回以及消息通知</p>
+                            </div>
+                        </div><br>
+
+                        <div class="input-group">
+                            <span class="input-group-addon" style="height: 35px">性别 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <input type="radio" name="sex" value="boy" class=""
+                                   style="width: 10%" aria-describedby="basic-addon1"
+                                   id="sex_boy"><label style=""> 男</label>
+                            <input type="radio" name="sex" value="girl" class=""
+                                   style="width: 10%" aria-describedby="basic-addon1"
+                                   id="sex_girl">女&nbsp;
+                            <!--<div class="form-control" style="width: 50%;border: none;border-collapse:collapse"
+                                 id="sexRemind">
+                                <p></p>
+                            </div>-->
+                        </div><br>
+
+                        <div class="input-group">
+                            <span class="input-group-addon">地区 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <input type="text" name="" class="form-control" style="width: 13%" aria-describedby="basic-addon1" id="province" placeholder="省">&nbsp;
+                            <input type="text" name="" class="form-control" style="width: 13%" aria-describedby="basic-addon1" id="town" placeholder="市">&nbsp;
+                            <input type="text" name="" class="form-control" style="width: 14%" aria-describedby="basic-addon1" id="county" placeholder="县">&nbsp;
+                            <div class="form-control" style="width: 50%;border: none;border-collapse:collapse;padding-left: 5px">
+                                <p>您目前工作或学习的城市</p>
+                            </div>
+                        </div><br>
+
+                        <div class="input-group">
+                            <span class="input-group-addon">届次 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <select class="form-control"  style="width: 40%" aria-describedby="basic-addon1" id="year" placeholder="">
+                                <option>1993</option>
+                                <option>1994</option>
+                                <option>1995</option>
+                                <option>1996</option>
+                                <option>1997</option>
+                                <option>1998</option>
+                                <option>1999</option>
+                                <option>2000</option>
+                                <option>2001</option>
+                                <option>2002</option>
+                                <option>2003</option>
+                                <option>2004</option>
+                                <option>2005</option>
+                                <option>2006</option>
+                                <option>2007</option>
+                                <option>2008</option>
+                                <option>2009</option>
+                                <option>2010</option>
+                                <option>2011</option>
+                                <option>2012</option>
+                                <option>2013</option>
+                                <option>2014</option>
+                                <option>2015</option>
+                            </select>
+                            <div class="form-control" style="width: 50%;border: none;border-collapse:collapse">
+                                <p>您从母校毕业的年份</p>
+                            </div>
+                        </div><br>
+
+
+                        <input type="submit" class="btn btn-lg btn-default" value="提交" id="submit">
+                        <input type="reset" class="btn btn-lg btn-default" value="重置" id="reset" >
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../../../js/jquery.min.js"></script>
+    <script src="../../../js/bootstrap.min.js"></script>
+    <!--<script src="../../js/register.js"></script>-->
+</body>
+</html>

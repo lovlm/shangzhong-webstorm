@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../../../images/xiaohui.jpg">
+    <title>Dashboard Template for Bootstrap</title>
+    <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../css/admin.css" rel="stylesheet">
+
+</head>
+
+<body onload="onload()">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="../../messageDisplay/home.html">上高二中校友会</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="msg_mod_base.html">
+                    <img data-src="holder.js/100x100/auto/sky" class="placeholder"
+                         alt="head_image" src="../../../images/head_image.jpg"
+                         style="max-height:2em;display: inline">&nbsp;&nbsp;柳明&nbsp;</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-sidebar">
+
+                <li class="_hide1"><a href="#">基本信息</a></li>
+                <li class="_hide1"><a href="msg_mod_email.html">邮箱</a></li>
+                <li class="_hide1"><a href="msg_mod_pwd.html">密码</a></li>
+                <li class="_hide1"><a href="msg_mod_image.html">头像</a></li>
+            </ul>
+
+        </div>
+
+
+        <div class="col-sm-9 col-sm-offset-3 col-md-6 col-md-offset-3 main">
+            <div class="row" style="width: 90% ;margin-left: 1%;font-size: 20px;padding-bottom: 10px">
+                <a href="#" onclick="modify()">修改</a>
+                <a href="#" onclick="cancle()" style="padding-left: 5%">取消</a>
+            </div>
+            <div class="table-responsive" >
+                <form id="form">
+                    <tr>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-addon">姓名 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <input type="text" name="" class="form-control"  aria-describedby="basic-addon1" id="real_name">
+                            </div>
+                        </td>
+                    </tr><br>
+                    <tr>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-addon">高三班级 </span>
+                                <input type="text" name="" class="form-control"  aria-describedby="basic-addon1" id="g_class">
+                            </div>
+                        </td>
+                    </tr><br>
+                    <tr>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-addon">毕业年份 </span>
+                                <input type="text" name="" class="form-control"  aria-describedby="basic-addon1" id="leaveYear">
+                            </div>
+                        </td>
+                    </tr><br>
+                    <tr>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-addon">高校 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <input type="text" name="" class="form-control"  aria-describedby="basic-addon1" id="university">
+                            </div>
+                        </td>
+                    </tr><br>
+                    <tr>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-addon">高校地区 </span>
+                                <input type="text" name="" class="form-control"  aria-describedby="basic-addon1" id="area">
+                            </div>
+                        </td>
+
+                    </tr><br>
+                    <tr>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-addon">恋爱情况 </span>
+                                <input type="text" name="" class="form-control"  aria-describedby="basic-addon1" id="love_status">
+                            </div>
+                        </td>
+                    </tr><br>
+                    <tr>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-addon">qq &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <input type="text" name="" class="form-control"  aria-describedby="basic-addon1" id="qq">
+                            </div>
+                        </td>
+                    </tr><br>
+                    <tr>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-addon">新浪微博 </span>
+                                <input type="text" name="" class="form-control"  aria-describedby="basic-addon1" id="sina_blog">
+                            </div>
+                        </td>
+                    </tr><br>
+                    <tr>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-addon">个性签名 </span>
+                                <input type="text" name="" class="form-control"  aria-describedby="basic-addon1" id="signature">
+                            </div>
+                        </td>
+                    </tr><br>
+                    <tr>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-addon">现居地 &nbsp;&nbsp;</span>
+                                <input type="text" name="" class="form-control"  aria-describedby="basic-addon1" id="live_city">
+                            </div>
+                        </td>
+                    </tr><br>
+                    <tr>
+                        <td>
+                            <div class="input-group">
+                                <span class="input-group-addon">工作 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <input type="text" name="" class="form-control"  aria-describedby="basic-addon1" id="job">
+                            </div>
+                        </td>
+                    </tr><br>
+                    <tr>
+                        <td colspan="2">
+                            <div class="col-md-2">
+                                <input type="submit" class="btn btn-lg btn-default" value="保存" id="submit" style="margin-left: -15px">
+                            </div>
+                        </td>
+                    </tr>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../../../js/jquery.min.js"></script>
+<script src="../../../js/bootstrap.min.js"></script>
+<script src="../../../js/msg_mod_common.js"></script>
+</body>
+</html>

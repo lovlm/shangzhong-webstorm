@@ -1,0 +1,211 @@
+h4 {
+  margin-top: 25px;
+  /*外边距*/
+}
+.row {
+  /*border: 1px solid #ddd;*/
+  margin-bottom: 20px;
+  /*padding-left: 10px;*/
+}
+.row .row {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+[class*="col-"] {
+  overflow:hidden;
+  text-overflow:ellipsis;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  /*background-color: #eee;*/
+  /*background-color: rgba(86,61,124,.15);*/
+  /*border: 1px solid #ddd;*/
+  /*border: 1px solid rgba(86,61,124,.2);*/
+}
+
+hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #5a5a5a;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+    align-content: center;
+    height: 300px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+    height: 300px;
+    background-color: #777;
+}
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 300px;
+}
+/* sign*/
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+    margin-bottom: 10px;
+}
+.form-signin .checkbox {
+    font-weight: normal;
+}
+.form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+}
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+pre {
+    background-color: #ffffff;
+    border: 0px;
+}
+
+@media (min-width: 992px) {
+    .toRight0,.toRight1,.toRight2,.toRight3,.toRight4,.toRight5,.toRight6,.toRight7,.toRight8,.toRight9,.toRight10,.toRight11,.toRight12{
+        float: left;
+    }
+
+    .toRight0{
+        left: 0%
+    }
+    .toRight1{
+        left: 8.33333333%
+    }
+    .toRight2{
+        left: 16.66666667%
+    }
+    .toRight3{
+        margin-left: 25%
+    }
+    .toRight4{
+        left: 33.33333333%
+    }
+    .toRight5{
+        left: 41.66666667%
+    }
+    .toRight6{
+        left: 50%
+    }
+    .toRight7{
+        left: 58.33333333%
+    }
+    .toRight8{
+        left: 66.66666667%
+    }
+    .toRight9{
+        left: 75%
+    }
+    .toRight10{
+        left: 83.33333333%
+    }
+    .toRight11{
+        left: 91.66666667%
+    }
+    .toRight12{
+        left: 100%
+    }
+}
+
+@media (min-width: 992px) {
+    .toLeft0,.toLeft1,.toLeft2,.toLeft3,.toLef4,.toLeft5,.toLeft6,.toLeft7,.toLeft8,.toLeft9,.toLeft10,.toLeft11,.toLeft12,{
+    }
+
+    .toLeft0,{
+    }
+    .toLeft1{
+        width: 8.33333333%
+    }
+    .toLeft2{
+        width: 16.66666667%
+    }
+    .toLeft3{
+        width: 25%
+    }
+    .toLeft4{
+        width: 33.33333333%
+    }
+    .toLeft5{
+        width: 41.66666667%
+    }
+    .toLeft6{
+        left: 50%
+    }
+    .toLeft7{
+        left: 58.33333333%
+    }
+    .toLeft8{
+        left: 66.66666667%
+    }
+    .toLeft9{
+        left: 75%
+    }
+    .toLeft10{
+        left: 83.33333333%
+    }
+    .toLeft11{
+        left: 91.66666667%
+    }
+    .toLeft12{
+        left: 100%
+    }
+}
+
+[class*="to"] {
+    /*border: 1px solid #ddd;*/
+    /*border: 1px solid rgba(86,61,124,.2);*/
+}
+
+/*body >div>div>div>form {
+    border: 1px solid #ddd;
+    background-color: #e5e5e5;
+}*/
+
+
