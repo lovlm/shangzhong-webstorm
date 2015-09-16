@@ -42,25 +42,26 @@
                 <div class="table-responsive">
                     <form id="form">
                         已有账户？直接<a href="login.html">登录</a><br><br>
-                        <div class="input-group">
-                            <span class="input-group-addon">姓名<label style="color: red">*</label>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                            <input type="text" name="" class="form-control" required="required"
+                        <div>带有<label style="color: red">*</label>的是必填项</div>
+                        <div class="input-group" style="margin-top: 10px">
+                            <span class="input-group-addon"><label style="color: red">*</label>昵称  &nbsp;&nbsp;&nbsp;&nbsp;</span>
+
+                            <input type="text" name="" class="form-control" required="required" autofocus="true"
                                    style="width: 40%" aria-describedby="basic-addon1"
                                    id="name" onblur="chkName()" onfocus="nameRecovery()">&nbsp;
                             <div class="form-control" style="width: 50%;border: none;border-collapse:collapse"
                                  id="nameRemind">
-                                <p>请填写您的真实姓名</p>
+                                <p></p>
                             </div>
                         </div><br>
 
                         <div class="input-group">
-                            <span class="input-group-addon">密码 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                            <input type="password" name="" class="form-control" required="required"
-                                   style="width: 40%" aria-describedby="basic-addon1"
-                                   id="password" onblur="chkPassword()" onfocus="pwdRecovery()">&nbsp;
+                            <span class="input-group-addon"><label style="color: red">*</label>密码 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <input type="password" name="" class="form-control" required="required" maxlength="16"
+                                   style="width: 40%" aria-describedby="basic-addon1" id="password">&nbsp;
                             <div class="form-control" style="width: 50%;border: none;border-collapse:collapse"
-                                 id="pwdRemind">
-                                <p>密码在6-16位之间，大小写字母、数字以及“_、#、@、!”组成</p>
+                                 id="pwdRemind" >
+                                <p></p>
                             </div>
                         </div><br>
 
@@ -72,33 +73,27 @@
                                    id="pwdrepeat" onblur="chkPwdRepeat()" onfocus="pwdRepeatRecovery()">&nbsp;
                             <div class="form-control" style="width: 50%;border: none;border-collapse:collapse"
                                  id="feedbackPwdRepeat">
-                                <p>请重复密码</p>
-                            </div>
-                        </div><br>
-
-                        <div class="input-group">
-                            <span class="input-group-addon">邮箱 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                            <input type="text" name="" class="form-control" required="required"
-                                   style="width: 40%" aria-describedby="basic-addon1"
-                                   id="Email" onblur="chkEmail()" onfocus="emailRecovery()">&nbsp;
-                            <div class="form-control" style="width: 50%;border: none;border-collapse:collapse"
-                                 id="emailRemind">
-                                <p>您的常用邮箱，便于密码找回以及消息通知</p>
-                            </div>
-                        </div><br>
-
-                        <div class="input-group">
-                            <span class="input-group-addon" style="height: 35px">性别 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                            <input type="radio" name="sex" value="boy" class=""
-                                   style="width: 10%" aria-describedby="basic-addon1"
-                                   id="sex_boy"><label style=""> 男</label>
-                            <input type="radio" name="sex" value="girl" class=""
-                                   style="width: 10%" aria-describedby="basic-addon1"
-                                   id="sex_girl">女&nbsp;
-                            <!--<div class="form-control" style="width: 50%;border: none;border-collapse:collapse"
-                                 id="sexRemind">
                                 <p></p>
-                            </div>-->
+                            </div>
+                        </div><br>
+
+                        <div class="input-group">
+                            <span class="input-group-addon"><label style="color: red">*</label>邮箱 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <input type="email" name="" class="form-control" required="required" style="width: 40%"
+                                   aria-describedby="basic-addon1"
+                                   id="Email" onblur="chkEmail()" onfocus="emailRecovery()">&nbsp;
+                        </div><br>
+
+                        <div class="input-group">
+                            <span class="input-group-addon" style="height: 30px"><label style="color: red">*</label>性别 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <div style="padding-top: 8px">
+                            <input type="radio" name="sex" value="boy" class="" required="required"
+                                   style="width: 10%" aria-describedby="basic-addon1"
+                                   id="sex_boy"/><label style=""> 男</label>
+                            <input type="radio" name="sex" value="girl" class="" required="required"
+                                   style="width: 10%" aria-describedby="basic-addon1"
+                                   id="sex_girl"/><label style=""> 女</label>
+                            </div>
                         </div><br>
 
                         <div class="input-group">
@@ -112,8 +107,8 @@
                         </div><br>
 
                         <div class="input-group">
-                            <span class="input-group-addon">届次 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                            <select class="form-control"  style="width: 40%" aria-describedby="basic-addon1" id="year" placeholder="">
+                            <span class="input-group-addon"><label style="color: red">*</label>届次 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <select class="form-control"  style="width: 40%" aria-describedby="basic-addon1" id="year" >
                                 <option>1993</option>
                                 <option>1994</option>
                                 <option>1995</option>
